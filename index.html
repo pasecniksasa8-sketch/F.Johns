@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>F.Johns | Барбершоп</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Montserrat&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #0a0a0a;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background: black;
+    position: sticky;
+    top: 0;
+}
+
+header h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.hero {
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)),
+    url() center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 50px;
+    font-family: 'Playfair Display', serif;
+}
+
+.hero p {
+    color: #ccc;
+}
+
+button {
+    padding: 15px 30px;
+    background: gold;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #111;
+    padding: 30px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.price {
+    color: gold;
+    margin-top: 10px;
+}
+
+.booking iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+}
+
+.instagram iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+}
+
+footer {
+    background: black;
+    padding: 30px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>F.Johns</h2>
+    <nav>
+        <a href="#services">Услуги</a>
+        <a href="#booking">Запись</a>
+        <a href="#contact">Контакты</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <div>
+        <h1>Стиль. Уверенность. Ты.</h1>
+        <p>Премиум барбершоп в Гданьске</p>
+        <button onclick="scrollToBooking()">Записаться</button>
+    </div>
+</div>
+
+<section id="services">
+    <h2>Услуги</h2>
+    <div class="services">
+        <div class="card">
+            <h3>Стрижка</h3>
+            <p>Современные и классические стили</p>
+            <div class="price">80 zł</div>
+        </div>
+        <div class="card">
+            <h3>Борода</h3>
+            <p>Контур и уход</p>
+            <div class="price">50 zł</div>
+        </div>
+        <div class="card">
+            <h3>Комплекс</h3>
+            <p>Стрижка + борода</p>
+            <div class="price">140 zł</div>
+        </div>
+        <div class="card">
+            <h3>Комплекс</h3>
+            <p>Стрижка + борода</p>
+            <div class="price">140 zł</div>
+    </div>
+</section>
+<section id="booking" class="booking">
+    <h2>Онлайн запись</h2>
+    <!-- ВСТАВЬ СЮДА СВОЮ ССЫЛКУ BOOKSY -->
+    <iframe src="<iframe src="https://booksy.com/pl-pl/183846_f-johns_barber-shop_20383_gdansk?do=invite&_branch_match_id=1565482602124604378&utm_medium=profile_share_from_boost&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT07J0UvKz88urtRLzs%2FVL8vLcjfyCTQJ802yrytKTUstKsrMS49PKsovL04tsnXOKMrPTQUABq3FyjwAAAA%3D"></iframe>"></iframe>
+</section>
+
+<section>
+    <h2>Наши работы</h2>
+    <div class="services">
+        <img src="IMG_0387.jpg" width="150">
+        <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9" width="200">
+        <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1" width="200">
+    </div>
+
+    <button onclick="window.open('https://www.instagram.com/denis_denisenko_2d?igsh=MXN4MHRlMGRnc2Uzbw%3D%3D', '_blank')">
+        Смотреть больше в Instagram
+    </button>
+</section>
+
+<section id="contact">
+    <h2>Контакты</h2>
+    <p>📍 Гданьск</p>
+    <p>📞 +48 694 997 374</p>
+</section>
+
+<footer>
+    <p>© 2026 F.Johns</p>
+</footer>
+
+<script>
+function scrollToBooking() {
+    document.getElementById('booking').scrollIntoView({ behavior: 'smooth' });
+}
+</script>
+
+</body>
+</html>
